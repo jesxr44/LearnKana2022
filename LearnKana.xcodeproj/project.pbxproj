@@ -9,13 +9,18 @@
 /* Begin PBXBuildFile section */
 		AE2F228627E2206900979F09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F228527E2206900979F09 /* AppDelegate.swift */; };
 		AE2F228827E2206900979F09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F228727E2206900979F09 /* SceneDelegate.swift */; };
-		AE2F228A27E2206900979F09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F228927E2206900979F09 /* ViewController.swift */; };
+		AE2F228A27E2206900979F09 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F228927E2206900979F09 /* GameViewController.swift */; };
 		AE2F228D27E2206900979F09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE2F228B27E2206900979F09 /* Main.storyboard */; };
 		AE2F228F27E2206900979F09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE2F228E27E2206900979F09 /* Assets.xcassets */; };
 		AE2F229227E2206900979F09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE2F229027E2206900979F09 /* LaunchScreen.storyboard */; };
 		AE2F229D27E2206900979F09 /* LearnKanaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F229C27E2206900979F09 /* LearnKanaTests.swift */; };
 		AE2F22A727E2206900979F09 /* LearnKanaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F22A627E2206900979F09 /* LearnKanaUITests.swift */; };
 		AE2F22A927E2206900979F09 /* LearnKanaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F22A827E2206900979F09 /* LearnKanaUITestsLaunchTests.swift */; };
+		AE2F22B727E2210A00979F09 /* Alphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F22B627E2210A00979F09 /* Alphabet.swift */; };
+		AE2F22B927E2213C00979F09 /* Hiragana.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F22B827E2213C00979F09 /* Hiragana.swift */; };
+		AE2F22BB27E2214800979F09 /* Katakana.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F22BA27E2214800979F09 /* Katakana.swift */; };
+		AE2F22BE27E2302700979F09 /* KanaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F22BD27E2302700979F09 /* KanaViewModel.swift */; };
+		AE2F22C027E231DA00979F09 /* Latin.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F22BF27E231DA00979F09 /* Latin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +44,7 @@
 		AE2F228227E2206900979F09 /* LearnKana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnKana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE2F228527E2206900979F09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE2F228727E2206900979F09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AE2F228927E2206900979F09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE2F228927E2206900979F09 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		AE2F228C27E2206900979F09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE2F228E27E2206900979F09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE2F229127E2206900979F09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +54,11 @@
 		AE2F22A227E2206900979F09 /* LearnKanaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnKanaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE2F22A627E2206900979F09 /* LearnKanaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnKanaUITests.swift; sourceTree = "<group>"; };
 		AE2F22A827E2206900979F09 /* LearnKanaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnKanaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AE2F22B627E2210A00979F09 /* Alphabet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alphabet.swift; sourceTree = "<group>"; };
+		AE2F22B827E2213C00979F09 /* Hiragana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hiragana.swift; sourceTree = "<group>"; };
+		AE2F22BA27E2214800979F09 /* Katakana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Katakana.swift; sourceTree = "<group>"; };
+		AE2F22BD27E2302700979F09 /* KanaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanaViewModel.swift; sourceTree = "<group>"; };
+		AE2F22BF27E231DA00979F09 /* Latin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Latin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +109,11 @@
 		AE2F228427E2206900979F09 /* LearnKana */ = {
 			isa = PBXGroup;
 			children = (
+				AE2F22BC27E2300700979F09 /* ViewModel */,
+				AE2F22B527E220EE00979F09 /* Models */,
 				AE2F228527E2206900979F09 /* AppDelegate.swift */,
 				AE2F228727E2206900979F09 /* SceneDelegate.swift */,
-				AE2F228927E2206900979F09 /* ViewController.swift */,
+				AE2F228927E2206900979F09 /* GameViewController.swift */,
 				AE2F228B27E2206900979F09 /* Main.storyboard */,
 				AE2F228E27E2206900979F09 /* Assets.xcassets */,
 				AE2F229027E2206900979F09 /* LaunchScreen.storyboard */,
@@ -125,6 +137,25 @@
 				AE2F22A827E2206900979F09 /* LearnKanaUITestsLaunchTests.swift */,
 			);
 			path = LearnKanaUITests;
+			sourceTree = "<group>";
+		};
+		AE2F22B527E220EE00979F09 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE2F22B627E2210A00979F09 /* Alphabet.swift */,
+				AE2F22B827E2213C00979F09 /* Hiragana.swift */,
+				AE2F22BA27E2214800979F09 /* Katakana.swift */,
+				AE2F22BF27E231DA00979F09 /* Latin.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE2F22BC27E2300700979F09 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AE2F22BD27E2302700979F09 /* KanaViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +289,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE2F228A27E2206900979F09 /* ViewController.swift in Sources */,
+				AE2F228A27E2206900979F09 /* GameViewController.swift in Sources */,
 				AE2F228627E2206900979F09 /* AppDelegate.swift in Sources */,
+				AE2F22B727E2210A00979F09 /* Alphabet.swift in Sources */,
+				AE2F22B927E2213C00979F09 /* Hiragana.swift in Sources */,
 				AE2F228827E2206900979F09 /* SceneDelegate.swift in Sources */,
+				AE2F22BE27E2302700979F09 /* KanaViewModel.swift in Sources */,
+				AE2F22C027E231DA00979F09 /* Latin.swift in Sources */,
+				AE2F22BB27E2214800979F09 /* Katakana.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +482,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,6 +510,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
