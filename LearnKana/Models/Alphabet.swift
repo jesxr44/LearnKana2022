@@ -9,6 +9,7 @@ import Foundation
 
 protocol Alphabet
 {
+    var title : String { get }
     var alphabet : Array<Array<String>> { get }
 
     var vowels : Array<String> { get }
@@ -26,9 +27,7 @@ protocol Alphabet
     var dRow : Array<String> { get }
     var bRow : Array<String> { get }
     var pRow : Array<String> { get }
-    
-    // combinations kya, kyu, kyo, etc
-    
+        
     // random from row
     
     // random from any

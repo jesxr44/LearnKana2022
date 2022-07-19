@@ -8,6 +8,7 @@
 import Foundation
 
 struct Hiragana: Alphabet {
+    let title = "Hiragana"
     var alphabet : Array<Array<String>>
 
     let vowels = ["あ","い","う","え","お"]
@@ -26,7 +27,19 @@ struct Hiragana: Alphabet {
     let bRow = ["ば","び","ぶ","べ","ぼ"]
     let pRow = ["ぱ","ぴ","ぷ","ぺ","ぽ"]
     
+    let kyaRow = ["きゃ","きゅ","きょ"]
+    let gyaRow = ["ぎゃ","ぎゅ","ぎょ"]
+    let shaRow = ["しゃ","しゅ","しょ"]
+    let jaRow = ["じゃ","じゅ","じょ"]
+    let chaRow = ["ちゃ","ちゅ","ちょ"]
+    let nyaRow = ["にゃ","にゅ","にょ"]
+    let hyaRow = ["ひゃ","ひゅ","ひょ"]
+    let byaRow = ["びゃ","びゅ","びょ"]
+    let pyaRow = ["ぴゃ","ぴゅ","ぴょ"]
+    let myaRow = ["みゃ","みゅ","みょ"]
+    let ryaRow = ["りゃ","りゅ","りょ"]
+    
     init () {
-        alphabet = [vowels, kRow, sRow, tRow, nRow, hRow, mRow, yRow, rRow, wnRow, gRow, zRow, dRow, bRow, pRow]
+        alphabet = [vowels, kRow, sRow, tRow, nRow, hRow, mRow, yRow, rRow, wnRow, gRow, zRow, dRow, bRow, pRow, kyaRow, gyaRow, shaRow, jaRow, chaRow, nyaRow, hyaRow, byaRow, pyaRow, myaRow, ryaRow]
     }
 }

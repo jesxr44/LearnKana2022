@@ -8,9 +8,10 @@
 import Foundation
 
 struct Latin: Alphabet {
+    let title = "Latin"
     var alphabet : Array<Array<String>>
 
-    let vowels = ["a","i","o","u","o"]
+    let vowels = ["a","i","u","e","o"]
     let kRow = ["ka","ki","ku","ke","ko"]
     let sRow = ["sa","shi","su","se","so"]
     let tRow = ["ta","chi","tsu","te","to"]
@@ -26,7 +27,19 @@ struct Latin: Alphabet {
     let bRow = ["ba","bi","bu","be","bo"]
     let pRow = ["pa","pi","pu","pe","po"]
     
+    let kyaRow = ["kya","kyu","kyo"]
+    let gyaRow = ["gya","gyu","gyo"]
+    let shaRow = ["sha","shu","sho"]
+    let jaRow = ["ja ","ju ","jo"]
+    let chaRow = ["cha","chu","cho"]
+    let nyaRow = ["nya","nyu","nyo"]
+    let hyaRow = ["hya","hyu","hyo"]
+    let byaRow = ["bya","byu","byo"]
+    let pyaRow = ["pya","pyu","pyo"]
+    let myaRow = ["mya","myu","myo"]
+    let ryaRow = ["rya","ryu","ryo"]
+
     init () {
-        alphabet = [vowels, kRow, sRow, tRow, nRow, hRow, mRow, yRow, rRow, wnRow, gRow, zRow, dRow, bRow, pRow]
+        alphabet = [vowels, kRow, sRow, tRow, nRow, hRow, mRow, yRow, rRow, wnRow, gRow, zRow, dRow, bRow, pRow, kyaRow, gyaRow, shaRow, jaRow, chaRow, nyaRow, hyaRow, byaRow, pyaRow, myaRow, ryaRow]
     }
 }

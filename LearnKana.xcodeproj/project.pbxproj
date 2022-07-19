@@ -21,6 +21,9 @@
 		AE2F22BB27E2214800979F09 /* Katakana.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F22BA27E2214800979F09 /* Katakana.swift */; };
 		AE2F22BE27E2302700979F09 /* KanaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F22BD27E2302700979F09 /* KanaViewModel.swift */; };
 		AE2F22C027E231DA00979F09 /* Latin.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F22BF27E231DA00979F09 /* Latin.swift */; };
+		AE2F22C627E3443B00979F09 /* SelectGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F22C527E3443B00979F09 /* SelectGameViewController.swift */; };
+		AE2F22C827E3445100979F09 /* GameOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F22C727E3445100979F09 /* GameOptionsViewController.swift */; };
+		AEF6696D27E4BB3A009D7E66 /* GameOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF6696C27E4BB3A009D7E66 /* GameOptionsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		AE2F22BA27E2214800979F09 /* Katakana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Katakana.swift; sourceTree = "<group>"; };
 		AE2F22BD27E2302700979F09 /* KanaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanaViewModel.swift; sourceTree = "<group>"; };
 		AE2F22BF27E231DA00979F09 /* Latin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Latin.swift; sourceTree = "<group>"; };
+		AE2F22C527E3443B00979F09 /* SelectGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGameViewController.swift; sourceTree = "<group>"; };
+		AE2F22C727E3445100979F09 /* GameOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOptionsViewController.swift; sourceTree = "<group>"; };
+		AEF6696C27E4BB3A009D7E66 /* GameOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOptionsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,12 +115,12 @@
 		AE2F228427E2206900979F09 /* LearnKana */ = {
 			isa = PBXGroup;
 			children = (
+				AE2F22C927E344C700979F09 /* Views */,
+				AE2F22C427E343B800979F09 /* ViewControllers */,
 				AE2F22BC27E2300700979F09 /* ViewModel */,
 				AE2F22B527E220EE00979F09 /* Models */,
 				AE2F228527E2206900979F09 /* AppDelegate.swift */,
 				AE2F228727E2206900979F09 /* SceneDelegate.swift */,
-				AE2F228927E2206900979F09 /* GameViewController.swift */,
-				AE2F228B27E2206900979F09 /* Main.storyboard */,
 				AE2F228E27E2206900979F09 /* Assets.xcassets */,
 				AE2F229027E2206900979F09 /* LaunchScreen.storyboard */,
 				AE2F229327E2206900979F09 /* Info.plist */,
@@ -154,8 +160,27 @@
 			isa = PBXGroup;
 			children = (
 				AE2F22BD27E2302700979F09 /* KanaViewModel.swift */,
+				AEF6696C27E4BB3A009D7E66 /* GameOptionsViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AE2F22C427E343B800979F09 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE2F228927E2206900979F09 /* GameViewController.swift */,
+				AE2F22C527E3443B00979F09 /* SelectGameViewController.swift */,
+				AE2F22C727E3445100979F09 /* GameOptionsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AE2F22C927E344C700979F09 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AE2F228B27E2206900979F09 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,9 +317,12 @@
 				AE2F228A27E2206900979F09 /* GameViewController.swift in Sources */,
 				AE2F228627E2206900979F09 /* AppDelegate.swift in Sources */,
 				AE2F22B727E2210A00979F09 /* Alphabet.swift in Sources */,
+				AE2F22C827E3445100979F09 /* GameOptionsViewController.swift in Sources */,
 				AE2F22B927E2213C00979F09 /* Hiragana.swift in Sources */,
+				AE2F22C627E3443B00979F09 /* SelectGameViewController.swift in Sources */,
 				AE2F228827E2206900979F09 /* SceneDelegate.swift in Sources */,
 				AE2F22BE27E2302700979F09 /* KanaViewModel.swift in Sources */,
+				AEF6696D27E4BB3A009D7E66 /* GameOptionsViewModel.swift in Sources */,
 				AE2F22C027E231DA00979F09 /* Latin.swift in Sources */,
 				AE2F22BB27E2214800979F09 /* Katakana.swift in Sources */,
 			);
@@ -475,11 +503,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6MZZWJ563T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LearnKana/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -503,11 +533,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6MZZWJ563T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LearnKana/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
